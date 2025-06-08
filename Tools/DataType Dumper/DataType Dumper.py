@@ -50,6 +50,7 @@ def api(version_hash=None):
                 api_dump_url = (
                     f"https://setup.rbxcdn.com/{version_hash}-Full-API-Dump.json"
                 )
+                print(api_dump_url)
                 try:
                     response = requests.get(api_dump_url)
                     response.raise_for_status()
